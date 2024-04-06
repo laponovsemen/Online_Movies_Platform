@@ -9,5 +9,8 @@ export const GlobalStyle = createGlobalStyle`
     color:${Theme.colors.textColor};
     font-family: Poppins, sans-serif;
   }
+  .navbar ul a {
+    color: rgb(34 197 94);
+  }
 `;
 

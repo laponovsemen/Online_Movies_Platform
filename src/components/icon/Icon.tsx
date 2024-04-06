@@ -16,7 +16,7 @@ export const Icon = ({iconId, stroke, fill, width, height, viewBox} : IconProps)
 		     height={height || "50"}
 		     viewBox={viewBox || "0 0 50 50"}
 		     stroke={stroke || "none"}
-		     fill={fill}
+		     fill={fill || "none"}
 		     xmlns="http://www.w3.org/2000/svg">
 			<use xlinkHref={`${iconsSprite}#${iconId}`} />
 		</svg>

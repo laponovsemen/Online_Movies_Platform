@@ -1,6 +1,6 @@
 import React from 'react';
 import {S} from "../../../styles/Styled_Section"
-import {StyledFlexWrapper} from "../../../components/flexWrapper";
+import {StyledFlexWrapper} from "../../../components/flexWrapper/flexWrapper";
 import {creators} from "../../../localMarkupDb/localMarkupDb";
 import {CreatorCard} from "./CreatorCard/CreatorCard";
 export const Discover = () => {

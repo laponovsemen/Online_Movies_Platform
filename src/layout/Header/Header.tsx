@@ -1,6 +1,6 @@
 import React from 'react';
 import {S} from "./Header_Styles"
-import {StyledFlexWrapper} from "../../components/flexWrapper";
+import {StyledFlexWrapper} from "../../components/flexWrapper/flexWrapper";
 import {MainLogo} from "../../components/MainLogo/MainLogo";
 import FilmCategories from "./FilmCategories/FilmCategories";
 import SearchInput from "./SearchInput/SearchInput";

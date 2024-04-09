@@ -1,9 +1,10 @@
 import React from 'react';
 import {S} from "../Styled_LoginModalForm"
-import {StyledFlexWrapper} from "../../../../../components/flexWrapper";
+import {StyledFlexWrapper} from "../../../../../components/flexWrapper/flexWrapper";
 import {Button} from "../../../../../components/Button/Button";
 import {BackButton} from "../BackButton/BackButton";
 import {CloseButton} from "../CloseButton/CloseButton";
+import {LoginFormRedux} from "./LoginFormRedux";
 
 interface LoginFormProps{
 	handleBack: () => void
@@ -31,7 +32,7 @@ export const LoginForm = ({handleBack, handleClose} : LoginFormProps) => {
 					>
 						here must be login form
 
-
+						<LoginFormRedux/>
 					</StyledFlexWrapper>
 				</StyledFlexWrapper>
 			</S.FormWrapper>

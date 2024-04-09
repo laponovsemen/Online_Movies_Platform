@@ -1,6 +1,6 @@
 import React from 'react';
 import {S} from "./Styled_UserSmallMenu"
-import {StyledFlexWrapper} from "../../../components/flexWrapper";
+import {StyledFlexWrapper} from "../../../components/flexWrapper/flexWrapper";
 import {NotificationIcon} from "./NotificationIcon/NotificationIcon";
 import Avatar from "./Avatar/Avatar";
 

@@ -2,7 +2,7 @@ import React from 'react';
 import {SideBarMenuSubListsItem} from "../../../../localMarkupDb/localMarkupDb";
 import {Icon} from "../../../../components/icon/Icon";
 import {S} from "./Styled_SideBarSubListItem"
-import {StyledFlexWrapper} from "../../../../components/flexWrapper";
+import {StyledFlexWrapper} from "../../../../components/flexWrapper/flexWrapper";
 import {NavLink} from "react-router-dom";
 
 interface SideBarSubListItemProps {

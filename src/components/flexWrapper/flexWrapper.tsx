@@ -12,6 +12,7 @@ type  FlexWrapperPropsType = {
 }
 export const StyledFlexWrapper = styled.div<FlexWrapperPropsType>`
   display: flex;
+  
   max-height: 100%;
   max-width: 100%;
   gap: ${props => props.gap || "initial"};

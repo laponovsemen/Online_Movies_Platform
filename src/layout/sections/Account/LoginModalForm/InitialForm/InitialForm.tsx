@@ -1,14 +1,16 @@
 import React from 'react';
 import {S} from "../Styled_LoginModalForm"
-import {StyledFlexWrapper} from "../../../../../components/flexWrapper";
+import {StyledFlexWrapper} from "../../../../../components/flexWrapper/flexWrapper";
 import {Button} from "../../../../../components/Button/Button";
 import {CloseButton} from "../CloseButton/CloseButton";
+import {useDispatch} from "react-redux";
 interface InitialFormProps{
 	handleLogin: ()=> void
 	handleRegistration: ()=> void
 	handleClose: ()=> void
 }
 export const InitialForm = ({handleLogin, handleRegistration,handleClose}: InitialFormProps) => {
+
 	return (
 		<S.Form>
 			<CloseButton handleClick={handleClose}/>

@@ -2,7 +2,7 @@ import React from 'react';
 import {Creator} from "../../../../localMarkupDb/localMarkupDb";
 import {CreatorCardAvatar} from "./CreatorAvatar/CreatorCardAvatar";
 import {S} from "./Styled_CreatorCard"
-import {StyledFlexWrapper} from "../../../../components/flexWrapper";
+import {StyledFlexWrapper} from "../../../../components/flexWrapper/flexWrapper";
 import {CreatorTechnology} from "./CreatorTechnology/CreatorTechnology";
 
 interface CreatorCardProps {

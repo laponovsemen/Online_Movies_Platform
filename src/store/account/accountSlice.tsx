@@ -3,7 +3,7 @@ import type { PayloadAction } from '@reduxjs/toolkit'
 import {RootState} from "../store";
 import {userFakeApi, UserCredentials} from "../../repository/userApi/userApi";
 
-const fetchUserByLoginAndEmail = createAsyncThunk(
+const loginUserByLoginAndEmail = createAsyncThunk(
 	'account/fetchUserByLoginAndEmail',
 	async (userCredentials : UserCredentials, thunkAPI) => {
 		const response = {data: await userFakeApi.fetchByLoginOrEmail(userCredentials)}
@@ -37,18 +37,31 @@ export const accountSlice = createSlice({
 	// `createSlice` will infer the state type from the `initialState` argument
 	initialState,
 	reducers: {
+		login: (state) => {
+			state.isLogged = true
+
+		},
+		logout: (state) => {
+			state.isLogged = false
+		},
 		// Use the PayloadAction type to declare the contents of `action.payload`
 	},
 	extraReducers: (builder) => {
-		builder.addCase(fetchUserByLoginAndEmail.fulfilled, (state, action)=> {
+		builder.addCase(loginUserByLoginAndEmail.fulfilled, (state, action)=> {
 			state.accessToken = action.payload.accessToken
 		})
 	}
 })
 
-export const {} = accountSlice.actions
+export const { login, logout, } = accountSlice.actions
 
 // Other code such as selectors can use the imported `RootState` type
 //export const selectCount = (state: RootState) => state.counter.value
 
 export default accountSlice.reducer
+
+const isLoggedSelector = (state: RootState) => state.account.isLogged
+
+export const selectors = {
+	isLoggedSelector
+}

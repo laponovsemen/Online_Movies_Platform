@@ -1,6 +1,6 @@
 import React from 'react';
 import {S} from "../Styled_LoginModalForm"
-import {StyledFlexWrapper} from "../../../../../components/flexWrapper";
+import {StyledFlexWrapper} from "../../../../../components/flexWrapper/flexWrapper";
 import {Button} from "../../../../../components/Button/Button";
 import {BackButton} from "../BackButton/BackButton";
 import {CloseButton} from "../CloseButton/CloseButton";

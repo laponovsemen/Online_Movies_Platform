@@ -2,7 +2,7 @@ import React from 'react';
 import {S} from "./Styled_CreatorTechnology"
 import {Icon} from "../../../../../components/icon/Icon";
 import {Creator, Technology} from "../../../../../localMarkupDb/localMarkupDb";
-import {StyledFlexWrapper} from "../../../../../components/flexWrapper";
+import {StyledFlexWrapper} from "../../../../../components/flexWrapper/flexWrapper";
 
 interface CreatorTechnologyProps {
 	technology: Technology

@@ -2,7 +2,7 @@ import React from 'react';
 import {SideBarMenuSubList} from "../../../localMarkupDb/localMarkupDb";
 import {SideBarSubListItem} from "./SideBarSubListItem/SideBarSubListItem";
 import {S} from "./Styled_SideBarSubList"
-import {StyledFlexWrapper} from "../../../components/flexWrapper";
+import {StyledFlexWrapper} from "../../../components/flexWrapper/flexWrapper";
 
 interface SideBarSubListProps {
 	sideBarSubListItem: SideBarMenuSubList

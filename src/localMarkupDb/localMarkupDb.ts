@@ -50,7 +50,7 @@ export const sideBarMenuList : SideBarMenuSubList[] = [
 		]},
 	{name : "user", items : [
 			{title:"account", iconId : "account", navigationId: "account"},
-			{title:"watch list", iconId : "watchList", navigationId: "watchList"},
+			{title:"watch list", iconId : "watchList", navigationId: "watch-list"},
 
 		]},
 	{name : "general", items : [
@@ -63,6 +63,15 @@ export const NewMoviesFilmsList : Film[] = [
 	{name: "John Wick : Chapter 4", genre: "Action",image: JohnWick, duration: "2h 12m", mark: 7.1},
 	{name: "Shazam", genre: "Action",image: Shazam,  duration: "2h 10m", mark: 6.1},
 	{name: "The Whale", genre: "Drama",image: TheWhale,  duration: "1h 57m", mark: 7.1},
+
+	{name: "John Wick : Chapter 4", genre: "Action",image: Tetris,  duration: "2h 12m", mark: 7.1},
+	{name: "John Wick : Chapter 4", genre: "Action",image: Batman, duration: "2h 12m", mark: 7.1},
+	{name: "Shazam", genre: "Action",image: Interstellar,  duration: "2h 10m", mark: 6.1},
+	{name: "The Whale", genre: "Drama",image: The,  duration: "1h 57m", mark: 7.1},
+	{name: "John Wick : Chapter 4", genre: "Action",image: Bladerunner,  duration: "2h 12m", mark: 7.1},
+	{name: "John Wick : Chapter 4", genre: "Action",image: JohnWick, duration: "2h 12m", mark: 7.1},
+	{name: "Shazam", genre: "Action",image: Shazam,  duration: "2h 10m", mark: 6.1},
+	{name: "The Whale", genre: "Drama",image: TheWhale,  duration: "1h 57m", mark: 7.1},
 	{name: "John Wick : Chapter 4", genre: "Action",image: Tetris,  duration: "2h 12m", mark: 7.1},
 ]
 export const RecommendedFilmsList : Film[] = [
@@ -70,6 +79,10 @@ export const RecommendedFilmsList : Film[] = [
 	{name: "Shazam", genre: "Action",image: Interstellar,  duration: "2h 10m", mark: 6.1},
 	{name: "The Whale", genre: "Drama",image: The,  duration: "1h 57m", mark: 7.1},
 	{name: "John Wick : Chapter 4", genre: "Action",image: Bladerunner,  duration: "2h 12m", mark: 7.1},
+	{name: "John Wick : Chapter 4", genre: "Action",image: JohnWick, duration: "2h 12m", mark: 7.1},
+	{name: "Shazam", genre: "Action",image: Shazam,  duration: "2h 10m", mark: 6.1},
+	{name: "The Whale", genre: "Drama",image: TheWhale,  duration: "1h 57m", mark: 7.1},
+	{name: "John Wick : Chapter 4", genre: "Action",image: Tetris,  duration: "2h 12m", mark: 7.1},
 ]
 const semenListOfTechnologies : Technology[] = [
 	{naming: "aws", iconId: "aws"},

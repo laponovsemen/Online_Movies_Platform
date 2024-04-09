@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {S as SettingsS} from "../Styled_Settings"
 import {S} from "./Styled_ThemeSwitch"
-import {StyledFlexWrapper} from "../../../../components/flexWrapper";
+import {StyledFlexWrapper} from "../../../../components/flexWrapper/flexWrapper";
 export const ThemeSwitch = () => {
 	const themeLS = localStorage.getItem("theme")
 	const [theme, setTheme] = useState(themeLS ?? "dark")

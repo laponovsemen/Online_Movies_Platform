@@ -1,6 +1,6 @@
 import React from 'react';
 import {S} from "./Styled_TopList"
-import Gachi from "./../../../assets/images/Gachi.jpeg"
+import Gachi from "../../assets/images/Gachi.jpeg"
 export const TopList = () => {
 	return (
 		<S.TopList>

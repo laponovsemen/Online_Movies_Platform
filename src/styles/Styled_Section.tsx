@@ -5,7 +5,8 @@ const Section = styled.div`
 position: absolute;
   height: 100%;
   left: 176px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 900px;
   padding-left: 106px;
 	
 `

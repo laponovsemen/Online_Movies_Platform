@@ -9,25 +9,27 @@ interface LoginModalFormProps {
 }
 export const LoginModalForm = ({handleClose}: LoginModalFormProps) => {
 	const [initialFormDisplay, setInitialFormDisplay] = useState(true)
-	const [loginFormDisplay, setLoginFormDisplay] = useState(false)
-	const [registrationFormDisplay, setRegistrationFormDisplay] = useState(false)
+	/*const [loginFormDisplay, setLoginFormDisplay] = useState(false)
+	const [registrationFormDisplay, setRegistrationFormDisplay] = useState(false)*/
 
-
+	const navigate = useNavigate()
 	const handleLoginBtn = () => {
-		setLoginFormDisplay(true)
-		setRegistrationFormDisplay(false)
+		/*setLoginFormDisplay(true)
+		setRegistrationFormDisplay(false)*/
 		setInitialFormDisplay(false)
+		navigate("/login")
 	}
 	const handleRegistrationBtn = () => {
-		setLoginFormDisplay(false)
-		setRegistrationFormDisplay(true)
+		/*setLoginFormDisplay(false)
+		setRegistrationFormDisplay(true)*/
 		setInitialFormDisplay(false)
+		navigate("/registration")
 	}
 	const handleBackBtn = () => {
 
 
-		setLoginFormDisplay(false)
-		setRegistrationFormDisplay(false)
+		/*setLoginFormDisplay(false)
+		setRegistrationFormDisplay(false)*/
 		setInitialFormDisplay(true)
 
 	}
@@ -40,14 +42,14 @@ export const LoginModalForm = ({handleClose}: LoginModalFormProps) => {
 					handleRegistration={handleRegistrationBtn}
 					handleClose={handleClose}
 				/>}
-				{loginFormDisplay && <LoginForm
+				{/*{loginFormDisplay && <LoginForm
 					handleBack={handleBackBtn}
                     handleClose={handleClose}
 				/>}
 				{registrationFormDisplay && <RegistrationForm
 					handleBack={handleBackBtn}
                     handleClose={handleClose}
-				/>}
+				/>}*/}
 			</S.LoginModal>
 		</S.LoginModalBackground>
 	);

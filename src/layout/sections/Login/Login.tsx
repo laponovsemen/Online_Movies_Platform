@@ -3,7 +3,7 @@ import {S} from "../../../styles/Styled_Section"
 import { useForm } from 'react-hook-form';
 import {userApi} from "../../../repository/userApi/userApi";
 import {useDispatch} from "react-redux";
-import {login} from "../../../store/account/accountSlice";
+import {loginUserByLoginAndEmailThunk} from "../../../store/account/accountSlice";
 import {useNavigate} from "react-router-dom";
 export const Login = () => {
 	const dispatch = useDispatch()
@@ -17,9 +17,9 @@ export const Login = () => {
 	const onSubmit = async (data: any) => {
 		console.log(data);
 		console.log("errors", errors)
-		const response = await userApi.fetchByLoginOrEmail(data)
-		dispatch(login())
-		navigate(-1)
+		//const response = await userApi.fetchByLoginOrEmail(data)
+		dispatch(loginUserByLoginAndEmailThunk(data))
+		//navigate(-1)
 	};
 
 	return (

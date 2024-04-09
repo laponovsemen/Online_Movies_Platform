@@ -1,13 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
 import {accountSlice} from "./account/accountSlice";
 import {useDispatch} from "react-redux";
-import {reducer as formReducer} from "redux-form"
+
 // ...
 
 export const store = configureStore({
 	reducer: {
 		account: accountSlice.reducer,
-		form : formReducer
 	},
 })
 

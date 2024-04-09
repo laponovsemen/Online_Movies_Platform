@@ -1,6 +1,7 @@
 import {axiosInstance} from "../axiosInstance";
 import {AxiosResponse} from "axios"
-import {LoginResponse} from "../../models/response/AuthResponse";
+import {authMeResponse, LoginResponse} from "../../models/response/AuthResponse";
+
 
 
 export type UserCredentials = {
@@ -8,24 +9,7 @@ export type UserCredentials = {
 	password: string
 }
 
-export const userFakeApi = {
-	async fetchByLoginOrEmail(userCredentials: UserCredentials): Promise<LoginResponse>{
-		if(userCredentials.loginOrEmail === "1111" && userCredentials.password === "1111"){
-			return new Promise((resolve) => {
-				setTimeout(() => {
-					resolve({accessToken: "asasa"})
-				}, 300)
-			})
-		} else {
-			return new Promise((resolve, reject) => {
-				setTimeout(() => {
-					reject()
-				}, 300)
-			})
-		}
 
-	}
-}
 export const userApi = {
 	async fetchByLoginOrEmail(userCredentials: UserCredentials): Promise<AxiosResponse<LoginResponse>>{
 		console.log("userCreads in userApi",userCredentials)
@@ -49,4 +33,7 @@ export const userApi = {
 		return await axiosInstance.post("authentication/logout")
 
 	},
+	async authMe(): Promise<AxiosResponse<authMeResponse>>{
+		return await axiosInstance.get<authMeResponse>("authentication/me")
+	}
 }

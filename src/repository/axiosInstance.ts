@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const backEndBaseUrl = "https://project-movie-gamma.vercel.app"
+export const backEndBaseUrl = "https://project-movie-gamma.vercel.app"
 const anotherUrl = "https://google.com"
 export const axiosInstance = axios.create({
 	baseURL: backEndBaseUrl,
